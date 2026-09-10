@@ -1,0 +1,9 @@
+version: "3"
+services:
+  streamlit:
+    build: .
+    command: "streamlit run streamlit/app.py"
+    ports:
+      - "8075:8501"
+    volumes:
+      - "./streamlit:/usr/src/app/streamlit" 
